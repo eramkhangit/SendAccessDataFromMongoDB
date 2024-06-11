@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function DBpart2() {
     const [userInfo, setUserInfo] = useState({
-        username: '',
+        name: '',
         email: '',
         password: ''
     }) //It's important if your send data through API data formate always in json form. otherwise it's throw error.
@@ -52,7 +52,7 @@ function DBpart2() {
         <div>
             <form onSubmit={submitInfo}>
 
-                <input type="text" placeholder='Username' onChange={e => setUserInfo({ ...userInfo, username: e.target.value })} />
+                <input type="text" placeholder='Username' onChange={e => setUserInfo({ ...userInfo, name: e.target.value })} />
                 <br />
 
                 <input type="email" placeholder='email' onChange={e => setUserInfo({ ...userInfo, email: e.target.value })} /><br />
